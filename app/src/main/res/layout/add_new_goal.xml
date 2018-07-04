@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    android:orientation="vertical"
+    tools:context="com.example.rahil.StrikerProject.AddNewGoal">
+
+
+    <EditText
+        android:id="@+id/enter_goal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Type Goal Here..."
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/specifications"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter specifications..."
+        android:paddingLeft="10dp" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Set DeadLine:"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/select_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Select Date"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/select_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Select Time"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/done_button"
+        android:text="Done"/>
+
+</LinearLayout>

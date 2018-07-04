@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="4dp"
+    tools:context="com.example.rahil.StrikerProject.DisplayGoal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:indeterminate="false"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/goal_begin_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                tools:text="Begin Date" />
+
+            <TextView
+                android:id="@+id/goal_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="12sp"
+                tools:text="End Date" />
+
+            <TextView
+                android:id="@+id/goal_begin_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goal_begin_date"
+                android:textSize="12sp"
+                tools:text="Begin Time" />
+
+            <TextView
+                android:id="@+id/goal_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/goal_end_date"
+                android:gravity="right"
+                android:textSize="12sp"
+                tools:text="End Time" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="5"
+        android:textSize="20sp"
+        tools:text="this is the goal "
+        android:scrollbars="vertical" />
+
+
+    <EditText
+        android:id="@+id/edit_specs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        tools:text="these are the specifications "
+        android:textSize="15sp"
+        android:scrollbars="vertical" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/takenImage"/>
+
+    <Button
+    android:id="@+id/change_date"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="16dp"
+    android:text="Change Date " />
+
+    <Button
+    android:id="@+id/change_time"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Change Time " />
+
+
+    <Button
+    android:id="@+id/done_edit_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:text="Done" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="end"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:onClick="imageIntent"
+            android:text="Confirm Achievement" />
+
+    </RelativeLayout>
+</LinearLayout>
+
